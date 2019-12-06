@@ -8,5 +8,7 @@ export class WorkServiceService {
 
 
 
-  constructor(private http:Http) { }
+  constructor(private http:Http) {
+    console.log("Service is Ready")
+  }
 }
