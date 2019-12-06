@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import{HttpClient} from '@angular/common/http';
-import'rxjs/add/operator/map';
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -8,8 +8,7 @@ export class WorkServiceService {
 
 
 
-  constructor(private http:Http) {
+  constructor(private http:HttpClient) {
     alert("Service is Ready");
-
   }
 }
