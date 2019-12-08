@@ -2,7 +2,7 @@
   <div class="card panel-default">
     <div class="card-header">
       {{profile.name}} <small>{{profile.login}}</small>
-
+      <br>
 
       {{profile.location}}
 
@@ -26,11 +26,12 @@
           <div >
             <p>
               <span class="badge badge-primary">{{profile.followers}} Followers </span>
-							<span class="label label-primary">{{profile.following}}Following </span>
+                |
+							<span class="badge badge-primary">{{profile.following}}Following </span>
 							  |
-							<span class="label label-info">{{profile.public_repos}} Public Repos</span>
+							<span class="badge badge-dark">{{profile.public_repos}} Public Repos</span>
             </p>
-            <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-success btn-sm">View profile on github</a></p>
+            <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-success btn-sm">Open</a></p>
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h3 class="panel-title">Repos</h3>
