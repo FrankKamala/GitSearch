@@ -7,11 +7,16 @@ import {WorkServiceService} from'../work-service.service';
 })
 export class ProfileComponent implements OnInit {
  profile:any;
+ repos:any;
   constructor( private service:WorkServiceService  ) {
   this.service.getUserInfo().subscribe(profile =>{
     console.log(profile);
     this.profile = profile;
   });
+  this.service.getRepoInfo().subscribe(repos =>{
+    console.log(repos);
+    this.repos = repos;
+  })
   }
 
   ngOnInit() {
