@@ -21,7 +21,7 @@ export class WorkServiceService {
 
   }
   getRepoInfo(){
-    return this.http.get(this._URL +this.username + '/repos').pipe(map(res => res));
+    return this.http.get(this._URL +this.username + '/repos?').pipe(map(res => res));
 
   }
 
