@@ -1,3 +1,23 @@
 .ext{
 	padding-top: 50px;
 }
+
+input::placeholder{
+  color: #1B1E23;
+}
+
+input {
+  background: #D3D3D3;
+  border: 1px solid #ffffff;
+  padding: .8em .7em;
+  height: 38px;
+
+
+  border-radius: 18px;
+  outline: none !important;
+  font-size: 20px;
+  color: #fff;
+}
+.col{
+  padding-top: 40px;
+}
