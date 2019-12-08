@@ -24,5 +24,8 @@ export class WorkServiceService {
     return this.http.get(this._URL +this.username + '/repos?').pipe(map(res => res));
 
   }
+  updateUser(username:string){
+    this.username = username;
+  }
 
 }

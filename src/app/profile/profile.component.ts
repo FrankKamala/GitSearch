@@ -8,6 +8,7 @@ import {WorkServiceService} from'../work-service.service';
 export class ProfileComponent implements OnInit {
  profile:any;
  repos:any;
+ username:string;
   constructor( private service:WorkServiceService  ) {
   this.service.getUserInfo().subscribe(profile =>{
     console.log(profile);
@@ -17,6 +18,9 @@ export class ProfileComponent implements OnInit {
     console.log(repos);
     this.repos = repos;
   })
+  }
+  findProfile(){
+    this.service.updateUser(this.username);
   }
 
   ngOnInit() {
