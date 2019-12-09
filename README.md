@@ -2,6 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
 
+## Description
+This is an Angular Application using the GitHub APi to enable searching of Github profiles .The Resulting Repositories then can be viewed in detail and profile details too.
+
+## Setup
+`git clone https://github.com/FrankKamala/GitSearch.git`
+Unzip the folder contents and open index.html file on any browser
+
+## Live Link
+`Link https://frankkamala.github.io/GitSearch/profile`
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
