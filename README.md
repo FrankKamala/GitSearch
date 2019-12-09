@@ -10,7 +10,7 @@ This is an Angular Application using the GitHub APi to enable searching of Githu
 Unzip the folder contents and open index.html file on any browser
 
 ## Live Link
-`Link https://frankkamala.github.io/GitSearch/profile`
+`Link `https://frankkamala.github.io/GitSearch/profile
 
 
 ## Development server
