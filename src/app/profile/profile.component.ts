@@ -14,7 +14,7 @@ export class ProfileComponent implements OnInit {
   }
   findProfile(){
 
-  this.service.updateUser(this.username);
+  this.service.updateUser(this.username + environment.apiKey);
   this.service.getUserInfo().subscribe(profile =>{
     console.log(profile);
     this.profile = profile;
